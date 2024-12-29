@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "main": "todo.js",
+  "type": "commonjs",  
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install",
+    "add": "node addTodo.js",
+    "list": "node listTodos.js",
+    "complete": "node completeTodo.js"
+  },
+  "keywords": [],
+  "author": "drashti padaliya <drashtipadaliya2204@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.17.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-jest": "^28.10.0",
+    "globals": "^15.14.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^12.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",  
+    "sequelize": "^6.37.5",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4"
+  },
+  "description": ""
+}
